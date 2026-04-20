@@ -59,7 +59,7 @@ export default function Home() {
 
   const fillDemo = () => setLoginForm({ email: 'patient@healthai.demo', password: 'Patient123!' });
 
-  if (view === 'dashboard') return <Dashboard user={user} onLogout={() => { setUser(null); setView('landing'); }} />;
+  if (view === 'dashboard') return <Dashboard />;
 
   if (view === 'login') return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
